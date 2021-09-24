@@ -7,7 +7,8 @@ int Top=-1;
 int Rear=-1;
 
 void Enqueue(int val){
-	if(Rear==Size-1){cout<<"Overflow"<<endl;}
+	if(Rear==Size-1){cout<<"Overflow"<<endl;
+			return;}
 	else if(Top==-1 && Rear==-1){
 		Top=0;
 		Rear=0;}
