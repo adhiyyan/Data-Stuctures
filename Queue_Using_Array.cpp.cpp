@@ -19,8 +19,12 @@ void Dequeue(){
 	if(Top==-1 || Top>Rear){
 		cout<<"Underflow"<<endl;
 	return;}
-	Top++;
+	else if(Top==Rear){Top=-1;
+		Rear=-1;
+		return;}
+	else{Top++;
 	return;}
+}
 
 void front(){
 	if(Top==-1|| Top>Rear){
